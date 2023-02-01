@@ -57,49 +57,49 @@ const Navbar = ({ selectedPage, setSelectedPage, isTopOfPage }: NavProps) => {
                 className=" rounded-full bg-secondary-500 p-2"
                 onClick={() => setIsMenuToggled(!isMenuToggled)}
               >
-                <Bars3Icon className="h-6 w-6 text-white" />{" "}
+                <Bars3Icon className="h-6 w-6 text-white" />
               </button>
             )}
           </div>
         </div>
       </div>
       {/* mobile menu */}
-      {isAboveMediumSize && isMenuToggled && (
-        <div className=" fixed right-0 bottom-0 z-40 h-screen w-[300px] bg-slate-400 drop-shadow-xl">
+      {!isAboveMediumSize && isMenuToggled && (
+        <div className="fixed right-0 bottom-0 z-40 h-screen w-[300px] bg-slate-400 drop-shadow-xl">
           {/* close */}
           <div className="flex justify-end p-12">
             <button onClick={() => setIsMenuToggled(!isMenuToggled)}>
-              <XMarkIcon className="h-6 w-6 text-red-700" />
+              <XMarkIcon className="h-6 w-6 text-red-700 outline-dashed " />
             </button>
           </div>
 
           {/* menu */}
-          <div className="ml-[33%] flex flex-col gap-10 text-2xl">
-            <Link
-              page="Home"
-              selectedPage={selectedPage}
-              setSelectedPage={setSelectedPage}
-            />
-            <Link
-              page="Benefits"
-              selectedPage={selectedPage}
-              setSelectedPage={setSelectedPage}
-            />
-            <Link
-              page="Our Classes"
-              selectedPage={selectedPage}
-              setSelectedPage={setSelectedPage}
-            />
-            <Link
-              page="Contact Us"
-              selectedPage={selectedPage}
-              setSelectedPage={setSelectedPage}
-            />
-          </div>
-          <div className={`${flexBetween} gap-8`}>
-            <p>Sign in</p>
+          <div className=" mx-8 flex flex-col gap-10 text-2xl">
+            <div className="flex flex-col gap-10 text-2xl px-12">
+              <Link
+                page="Home"
+                selectedPage={selectedPage}
+                setSelectedPage={setSelectedPage}
+              />
+              <Link
+                page="Benefits"
+                selectedPage={selectedPage}
+                setSelectedPage={setSelectedPage}
+              />
+              <Link
+                page="Our Classes"
+                selectedPage={selectedPage}
+                setSelectedPage={setSelectedPage}
+              />
+              <Link
+                page="Contact Us"
+                selectedPage={selectedPage}
+                setSelectedPage={setSelectedPage}
+              />
+              <p className=" transition duration-500 hover:text-gray-50">Sign in</p>
+            </div>
             <ActionButton setSelectedPage={setSelectedPage}>
-              Become a Member
+              <p className="text-lg">Become a Member</p>
             </ActionButton>
           </div>
         </div>
