@@ -18,7 +18,8 @@ const Navbar = ({ selectedPage, setSelectedPage, isTopOfPage }: NavProps) => {
         <div className={`${flexBetween} mx-auto w-5/6`}>
           <div className={`${flexBetween} w-full gap-16`}>
             {/* left side */}
-            <img src="" alt="logo" />
+            <h1 className="text-lg font-extrabold">ASTRO</h1>
+            {/* <img src="" alt="logo" /> */}
 
             {/* right side */}
             {isAboveMediumSize ? (
