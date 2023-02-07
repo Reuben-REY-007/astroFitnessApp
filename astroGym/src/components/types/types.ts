@@ -24,3 +24,27 @@ export type ActionButtonProps = {
 export type HomepageProps = {
   setSelectedPage: (value: SelectedPage) => void
 }
+
+export type BenefitsProps = {
+  setSelectedPage: (value: SelectedPage) => void;
+}
+
+export type HTextProps = {
+  children: string;
+}
+
+export type BenefitCardProps = {
+  title: string;
+  icon: JSX.Element
+  description: string;
+  setSelectedPage: (value: SelectedPage) => void;
+}
+
+export type BenefitProps = {
+  icon: JSX.Element
+  title: string;
+  description: string;
+}
+export type DescriptionProps = {
+  setSelectedPage: (value: SelectedPage) => void;
+};
