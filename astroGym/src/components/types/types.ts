@@ -1,3 +1,4 @@
+import { type } from 'os';
 export enum SelectedPage {
   Home = "home",
   Benefits = "benefits",
@@ -48,3 +49,17 @@ export type BenefitProps = {
 export type DescriptionProps = {
   setSelectedPage: (value: SelectedPage) => void;
 };
+
+export type OurClassesProps = {
+  setSelectedPage: (value: SelectedPage) => void;
+}
+
+export type ClassProps = {
+  name: string;
+  description?: string;
+  image: string;
+};
+
+export type ContactUsProps = {
+  setSelectedPage: (value: SelectedPage) => void;
+}
