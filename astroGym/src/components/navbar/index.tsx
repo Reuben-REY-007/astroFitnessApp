@@ -47,7 +47,9 @@ const Navbar = ({ selectedPage, setSelectedPage, isTopOfPage }: NavProps) => {
                   />
                 </div>
                 <div className={`${flexBetween} gap-8`}>
-                  <p>Sign in</p>
+                  <a href="/account">
+                    <p>Sign in</p>
+                  </a>
                   <ActionButton setSelectedPage={setSelectedPage}>
                     Become a Member
                   </ActionButton>
@@ -76,7 +78,7 @@ const Navbar = ({ selectedPage, setSelectedPage, isTopOfPage }: NavProps) => {
 
           {/* menu */}
           <div className=" mx-8 flex flex-col gap-10 text-2xl">
-            <div className="flex flex-col gap-10 text-2xl px-12">
+            <div className="flex flex-col gap-10 px-12 text-2xl">
               <Link
                 page="Home"
                 selectedPage={selectedPage}
@@ -97,7 +99,11 @@ const Navbar = ({ selectedPage, setSelectedPage, isTopOfPage }: NavProps) => {
                 selectedPage={selectedPage}
                 setSelectedPage={setSelectedPage}
               />
-              <p className=" transition duration-500 hover:text-gray-50">Sign in</p>
+              <p className=" transition duration-500 hover:text-gray-50">
+              <a href="/account">
+                    <p>Sign in</p>
+                  </a>
+              </p>
             </div>
             <ActionButton setSelectedPage={setSelectedPage}>
               <p className="text-lg">Become a Member</p>
