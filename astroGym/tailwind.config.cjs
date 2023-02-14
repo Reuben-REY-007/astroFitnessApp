@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
+  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}", "./node_modules/flowbite/**/*.js"],
   theme: {
     extend: {
       colors: {
@@ -28,6 +28,7 @@ module.exports = {
         abstractwaves: "url('./assets/AbstractWaves.png')",
         sparkles: "url('./assets/Sparkles.png')",
         circles: "url('./assets/Circles.png')",
+        bgAccount: "url('./assets/background-image.webp')",
       },
     },
     screens: {
@@ -36,5 +37,7 @@ module.exports = {
       md: "1060px",
     },
   },
-  plugins: [],
+  plugins: [
+    require('flowbite/plugin')
+  ],
 };
