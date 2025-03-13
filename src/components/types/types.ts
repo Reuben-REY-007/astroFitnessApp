@@ -31,7 +31,7 @@ export type BenefitsProps = {
 }
 
 export type HTextProps = {
-  children: string;
+  children: React.ReactNode;
 }
 
 export type BenefitCardProps = {
