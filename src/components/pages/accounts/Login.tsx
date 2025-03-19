@@ -1,5 +1,5 @@
 import { Button, TextInput } from "flowbite-react";
-import React, { useState } from "react";
+import { useState } from "react";
 import Signup from "./Signup";
 
 type Props = {};

@@ -1,4 +1,3 @@
-import React from "react";
 import { ActionButtonProps, SelectedPage } from "../types/types";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 

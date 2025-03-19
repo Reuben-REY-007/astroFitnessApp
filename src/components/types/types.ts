@@ -1,4 +1,3 @@
-import { type } from 'os';
 export enum SelectedPage {
   Home = "home",
   Benefits = "benefits",

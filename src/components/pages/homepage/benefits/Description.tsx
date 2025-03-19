@@ -1,6 +1,6 @@
 import ActionButton from "@/components/atom/ActionButton";
 import HText from "@/components/atom/HText";
-import { DescriptionProps, SelectedPage } from "@/components/types/types";
+import { DescriptionProps } from "@/components/types/types";
 import { motion } from "framer-motion";
 import BenefitsPageGraphic from "@/assets/BenefitsPageGraphic.png";
 

@@ -2,7 +2,7 @@ import { ContactUsProps, SelectedPage } from "@/components/types/types";
 import { motion } from "framer-motion";
 import ContactUsPageGraphic from "@/assets/ContactUsPageGraphic.png";
 import HText from "@/components/atom/HText";
-import { useForm, useFormState } from "react-hook-form";
+import { useForm } from "react-hook-form";
 
 const ContactUs = ({ setSelectedPage }: ContactUsProps) => {
   const {

@@ -1,5 +1,4 @@
 import { Button, TextInput } from "flowbite-react";
-import { type } from "os";
 
 type Props = {
   setSignUp: React.Dispatch<React.SetStateAction<boolean>>;
